@@ -1,0 +1,12 @@
+name: traction-k8-application
+runtime:
+  name: nodejs
+  options:
+    packagemanager: npm
+backend:
+  url: s3://traction-infra-state-dev-3cf501e
+description: This project defines the Infrastructure of the Traction K8 Application inside AWS EKS
+config:
+  pulumi:tags:
+    value:
+      pulumi:template: aws-typescript
